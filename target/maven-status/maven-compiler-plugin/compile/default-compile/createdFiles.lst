@@ -1,1 +1,14 @@
+models\request\UpdatePetRequest$Category$Builder.class
+models\request\CreatePetRequest.class
+models\request\UpdatePetRequest$Tag$Builder.class
+models\request\UpdatePetRequest.class
+models\request\CreatePetRequest$Builder.class
+models\request\CreatePetRequest$Category.class
+models\request\CreatePetRequest$Tag$Builder.class
+models\request\UpdatePetRequest$Builder.class
+models\request\UpdatePetRequest$Category.class
+models\request\CreatePetRequest$Tag.class
+utils\ConfigFactory.class
+models\request\UpdatePetRequest$Tag.class
+models\request\CreatePetRequest$Category$Builder.class
 client\RestAssuredClient.class

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/onur.tarar/IdeaProjects/RestSpriteCloud">
+        <classes>
+            <class name="services.pet.CreatePetTest">
+                <methods>
+                    <include name="createPetHappyPath"/>
+                    <include name="createTestNegatives"/>
+                </methods>
+            </class>
+            <class name="services.pet.DeletePetTest">
+                <methods>
+                    <include name="deletePetHappyPath"/>
+                </methods>
+            </class>
+            <class name="services.pet.FindPetByStatusTest">
+                <methods>
+                    <include name="findPetByStatusHappyPath"/>
+                    <include name="findPetByStatusCheckWithWhiteSpaceStatus"/>
+                    <include name="findPetByStatusCheckWithNullStatus"/>
+                    <include name="findPetByStatusCheckWithInvalidStatus"/>
+                </methods>
+            </class>
+            <class name="services.pet.UpdatePetTest">
+                <methods>
+                    <include name="updatePetHappyPath"/>
+                    <include name="updatePetNegativeCases"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -8,7 +8,6 @@ import org.testng.annotations.Test;
 public class FindPetByStatusTest {
     PetHelper petStoreHelper = new PetHelper();
 
-
     @Test
     public void findPetByStatusHappyPath(){
         Response response=  petStoreHelper.getPetsByStatus("available");

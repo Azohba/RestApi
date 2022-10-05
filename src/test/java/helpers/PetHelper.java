@@ -5,6 +5,7 @@ import helpers.config.ApiConstant;
 import io.restassured.response.Response;
 import models.request.CreatePetRequest;
 import models.request.UpdatePetRequest;
+import models.response.CreatePetResponse;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -43,6 +44,23 @@ public class PetHelper extends RestAssuredClient {
                 .addTags(tag)
                 .withStatus(status).build();
         return post(PET,null,null,createPetRequest);
+    }
+
+    public CreatePetResponse createPetWithResponseModel(String categoryName, String petName, String photoUrl, String status){
+        CreatePetRequest.Category category = CreatePetRequest.Category.newBuilder()
+                .withName(categoryName).build();
+        CreatePetRequest.Tag tag = CreatePetRequest.Tag.newBuilder()
+                .withId(commonHelper.getRandomNumber(3))
+                .withName(commonHelper.getRandomString(5)).build();
+        CreatePetRequest createPetRequest = CreatePetRequest.newBuilder()
+                .withId(commonHelper.getRandomNumber(8))
+                .withCategory(category)
+                .withName(petName)
+                .addPhotoUrls(photoUrl)
+                .addTags(tag)
+                .withStatus(status).build();
+        Response response = post(PET,null,null,createPetRequest);
+        return response.body().as(CreatePetResponse.class);
     }
 
     public Response deletePet(String petId){

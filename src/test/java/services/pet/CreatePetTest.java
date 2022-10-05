@@ -22,11 +22,4 @@ public class CreatePetTest {
         Assert.assertTrue(response.jsonPath().getString("photoUrls[0]").equals(photoUrl));
         Assert.assertTrue(response.jsonPath().getString("status").equals(statuses[0]));
     }
-
-    @Test
-    public void createTestNegatives(){
-        Response response = petHelper.createPet(null,null,null,null);
-
-    }
-    
 }
