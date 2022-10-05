@@ -1,8 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 59.482 sec <<< FAILURE! - in TestSuite
-deletePetHappyPath(services.pet.DeletePetTest)  Time elapsed: 1.602 sec  <<< FAILURE!
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 33.622 sec <<< FAILURE! - in TestSuite
+deletePetHappyPath(services.pet.DeletePetTest)  Time elapsed: 0.593 sec  <<< FAILURE!
 java.lang.AssertionError: expected [200] but found [405]
-	at services.pet.DeletePetTest.deletePetHappyPath(DeletePetTest.java:16)
+	at services.pet.DeletePetTest.deletePetHappyPath(DeletePetTest.java:21)
+
+findPetByStatusCheckWithNullStatus(services.pet.FindPetByStatusTest)  Time elapsed: 0.548 sec  <<< FAILURE!
+java.lang.AssertionError: expected [[]] but found [[{"id":11,"name":"teroSr","photoUrls":[],"tags":[{"id":11,"name":"teroSr"}],"status":""}]]
+	at services.pet.FindPetByStatusTest.findPetByStatusCheckWithNullStatus(FindPetByStatusTest.java:33)
 

@@ -6,8 +6,14 @@
       <class name="services.pet.DeletePetTest">
         <methods>
           <include name="deletePetHappyPath"/>
+          <include name="beforeTest"/>
         </methods>
       </class> <!-- services.pet.DeletePetTest -->
+      <class name="services.pet.FindPetByStatusTest">
+        <methods>
+          <include name="findPetByStatusCheckWithNullStatus"/>
+        </methods>
+      </class> <!-- services.pet.FindPetByStatusTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

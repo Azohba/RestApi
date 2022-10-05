@@ -24,7 +24,7 @@ public class PetHelper extends RestAssuredClient {
         params.put("status",status);
         return get(PET+"/findByStatus",params,null,null);
     }
-    public Response getPetsById(String id){
+    public Response getPetsById(Integer id){
         Map<String,Object> params = new HashMap<>();
         params.put("id",id);
         return get(PET,params,null,null);
@@ -63,7 +63,7 @@ public class PetHelper extends RestAssuredClient {
         return response.body().as(CreatePetResponse.class);
     }
 
-    public Response deletePet(String petId){
+    public Response deletePet(Integer petId){
         Map<String,Object> params = new HashMap<>();
         params.put("petId",petId);
         Response response = delete(PET,params,null,null);

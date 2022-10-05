@@ -1,8 +1,10 @@
 package helpers;
 
 import java.util.Random;
+import java.util.logging.Logger;
 
 public class CommonHelper {
+    public static Logger logger = Logger.getLogger(String.valueOf(CommonHelper.class));
     public int getRandomNumber(Integer bound){
         String SALTCHARS = "123456789";
         StringBuilder salt = new StringBuilder();
