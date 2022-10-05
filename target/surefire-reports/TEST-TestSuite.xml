@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="33.622" tests="7" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="39.755" tests="7" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.3+8-LTS-111"/>
@@ -62,16 +62,16 @@
     <property name="sun.stdout.encoding" value="cp857"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="createPetHappyPath" classname="services.pet.CreatePetTest" time="0.97"/>
-  <testcase name="deletePetHappyPath" classname="services.pet.DeletePetTest" time="0.593">
+  <testcase name="createPetHappyPath" classname="services.pet.CreatePetTest" time="0.901"/>
+  <testcase name="deletePetHappyPath" classname="services.pet.DeletePetTest" time="0.615">
     <failure message="expected [200] but found [405]" type="java.lang.AssertionError">java.lang.AssertionError: expected [200] but found [405]
-	at services.pet.DeletePetTest.deletePetHappyPath(DeletePetTest.java:21)
+	at services.pet.DeletePetTest.deletePetHappyPath(DeletePetTest.java:24)
 </failure>
     <system-out><![CDATA[Request method:	DELETE
-Request URI:	https://petstore.swagger.io/v2/pet?petId=97293933
+Request URI:	https://petstore.swagger.io/v2/pet?petId=21876726
 Proxy:			<none>
 Request params:	<none>
-Query params:	petId=97293933
+Query params:	petId=21876726
 Form params:	<none>
 Path params:	<none>
 Headers:		xAutomation=true
@@ -84,44 +84,13 @@ Body:			<none>
   <type>unknown</type>
 </apiResponse>
 ]]></system-out>
+    <system-err><![CDATA[Eki 05, 2022 11:08:58 ÖS services.pet.DeletePetTest deletePetHappyPath
+INFO: Delete Pet happy pat
+]]></system-err>
   </testcase>
   <testcase name="findPetByStatusCheckWithInvalidStatus" classname="services.pet.FindPetByStatusTest" time="0.532"/>
-  <testcase name="findPetByStatusCheckWithNullStatus" classname="services.pet.FindPetByStatusTest" time="0.548">
-    <failure message="expected [[]] but found [[{&quot;id&quot;:11,&quot;name&quot;:&quot;teroSr&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[{&quot;id&quot;:11,&quot;name&quot;:&quot;teroSr&quot;}],&quot;status&quot;:&quot;&quot;}]]" type="java.lang.AssertionError">java.lang.AssertionError: expected [[]] but found [[{"id":11,"name":"teroSr","photoUrls":[],"tags":[{"id":11,"name":"teroSr"}],"status":""}]]
-	at services.pet.FindPetByStatusTest.findPetByStatusCheckWithNullStatus(FindPetByStatusTest.java:33)
-</failure>
-    <system-out><![CDATA[Request method:	GET
-Request URI:	https://petstore.swagger.io/v2/pet/findByStatus?status
-Proxy:			<none>
-Request params:	<none>
-Query params:	status
-Form params:	<none>
-Path params:	<none>
-Headers:		xAutomation=true
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-[
-    {
-        "id": 11,
-        "name": "teroSr",
-        "photoUrls": [
-            
-        ],
-        "tags": [
-            {
-                "id": 11,
-                "name": "teroSr"
-            }
-        ],
-        "status": ""
-    }
-]
-]]></system-out>
-  </testcase>
-  <testcase name="findPetByStatusCheckWithWhiteSpaceStatus" classname="services.pet.FindPetByStatusTest" time="0.521"/>
-  <testcase name="findPetByStatusHappyPath" classname="services.pet.FindPetByStatusTest" time="26.577"/>
-  <testcase name="updatePetHappyPath" classname="services.pet.UpdatePetTest" time="0.547"/>
+  <testcase name="findPetByStatusCheckWithNullStatus" classname="services.pet.FindPetByStatusTest" time="0.539"/>
+  <testcase name="findPetByStatusCheckWithWhiteSpaceStatus" classname="services.pet.FindPetByStatusTest" time="0.537"/>
+  <testcase name="findPetByStatusHappyPath" classname="services.pet.FindPetByStatusTest" time="32.586"/>
+  <testcase name="updatePetHappyPath" classname="services.pet.UpdatePetTest" time="0.55"/>
 </testsuite>

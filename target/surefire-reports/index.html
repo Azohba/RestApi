@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 2 failed,   5 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -105,11 +105,6 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="services.pet.DeletePetTest" class="method navigator-link" hash-for-method="deletePetHappyPath">deletePetHappyPath</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="services.pet.FindPetByStatusTest" class="method navigator-link" hash-for-method="findPetByStatusCheckWithNullStatus">findPetByStatusCheckWithNullStatus</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Surefire_suite -->
@@ -129,6 +124,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="services.pet.FindPetByStatusTest" class="method navigator-link" hash-for-method="findPetByStatusCheckWithInvalidStatus">findPetByStatusCheckWithInvalidStatus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="services.pet.FindPetByStatusTest" class="method navigator-link" hash-for-method="findPetByStatusCheckWithNullStatus">findPetByStatusCheckWithNullStatus</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -170,27 +170,7 @@
                   </a> <!-- deletePetHappyPath -->
                   <span class="method-name">deletePetHappyPath</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [200] but found [405]
-	at services.pet.DeletePetTest.deletePetHappyPath(DeletePetTest.java:21)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 37 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
-          <div class="suite-Surefire_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">services.pet.FindPetByStatusTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="findPetByStatusCheckWithNullStatus">
-                  </a> <!-- findPetByStatusCheckWithNullStatus -->
-                  <span class="method-name">findPetByStatusCheckWithNullStatus</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [[]] but found [[{&quot;id&quot;:11,&quot;name&quot;:&quot;teroSr&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[{&quot;id&quot;:11,&quot;name&quot;:&quot;teroSr&quot;}],&quot;status&quot;:&quot;&quot;}]]
-	at services.pet.FindPetByStatusTest.findPetByStatusCheckWithNullStatus(FindPetByStatusTest.java:33)
+	at services.pet.DeletePetTest.deletePetHappyPath(DeletePetTest.java:24)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 37 stack frames
 </div> <!-- stack-trace -->
@@ -201,14 +181,14 @@
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">services.pet.CreatePetTest</span>
+              <span class="class-name">services.pet.UpdatePetTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createPetHappyPath">
-                  </a> <!-- createPetHappyPath -->
-                  <span class="method-name">createPetHappyPath</span>
+                  <a name="updatePetHappyPath">
+                  </a> <!-- updatePetHappyPath -->
+                  <span class="method-name">updatePetHappyPath</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -224,6 +204,13 @@
                   <a name="findPetByStatusCheckWithInvalidStatus">
                   </a> <!-- findPetByStatusCheckWithInvalidStatus -->
                   <span class="method-name">findPetByStatusCheckWithInvalidStatus</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findPetByStatusCheckWithNullStatus">
+                  </a> <!-- findPetByStatusCheckWithNullStatus -->
+                  <span class="method-name">findPetByStatusCheckWithNullStatus</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -245,14 +232,14 @@
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">services.pet.UpdatePetTest</span>
+              <span class="class-name">services.pet.CreatePetTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="updatePetHappyPath">
-                  </a> <!-- updatePetHappyPath -->
-                  <span class="method-name">updatePetHappyPath</span>
+                  <a name="createPetHappyPath">
+                  </a> <!-- createPetHappyPath -->
+                  <span class="method-name">createPetHappyPath</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -315,36 +302,36 @@ data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'findPetByStatusHappyPath')
 data.setCell(0, 2, 'services.pet.FindPetByStatusTest')
-data.setCell(0, 3, 26576);
+data.setCell(0, 3, 32586);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'createPetHappyPath')
 data.setCell(1, 2, 'services.pet.CreatePetTest')
-data.setCell(1, 3, 970);
+data.setCell(1, 3, 900);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'deletePetHappyPath')
 data.setCell(2, 2, 'services.pet.DeletePetTest')
-data.setCell(2, 3, 588);
+data.setCell(2, 3, 609);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'findPetByStatusCheckWithNullStatus')
-data.setCell(3, 2, 'services.pet.FindPetByStatusTest')
-data.setCell(3, 3, 547);
+data.setCell(3, 1, 'updatePetHappyPath')
+data.setCell(3, 2, 'services.pet.UpdatePetTest')
+data.setCell(3, 3, 550);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'updatePetHappyPath')
-data.setCell(4, 2, 'services.pet.UpdatePetTest')
-data.setCell(4, 3, 546);
+data.setCell(4, 1, 'findPetByStatusCheckWithNullStatus')
+data.setCell(4, 2, 'services.pet.FindPetByStatusTest')
+data.setCell(4, 3, 539);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'findPetByStatusCheckWithInvalidStatus')
+data.setCell(5, 1, 'findPetByStatusCheckWithWhiteSpaceStatus')
 data.setCell(5, 2, 'services.pet.FindPetByStatusTest')
-data.setCell(5, 3, 532);
+data.setCell(5, 3, 536);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'findPetByStatusCheckWithWhiteSpaceStatus')
+data.setCell(6, 1, 'findPetByStatusCheckWithInvalidStatus')
 data.setCell(6, 2, 'services.pet.FindPetByStatusTest')
-data.setCell(6, 3, 520);
+data.setCell(6, 3, 532);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <span class="suite-total-time">Total running time: 36 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -380,14 +367,14 @@ return data;
               <div class="chronological-class-name">services.pet.UpdatePetTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">1914 ms</span>
+                <span class="method-start">2073 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">services.pet.CreatePetTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">createPetHappyPath</span>
-                <span class="method-start">2500 ms</span>
+                <span class="method-start">2656 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -396,39 +383,37 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">deletePetHappyPath</span>
-                <span class="method-start">3474 ms</span>
+                <span class="method-start">3559 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">services.pet.FindPetByStatusTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">findPetByStatusCheckWithInvalidStatus</span>
-                <span class="method-start">4066 ms</span>
+                <span class="method-start">4173 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">findPetByStatusCheckWithNullStatus</span>
-                <span class="method-start">4599 ms</span>
+                <span class="method-start">4705 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">findPetByStatusCheckWithWhiteSpaceStatus</span>
-                <span class="method-start">5148 ms</span>
+                <span class="method-start">5245 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">findPetByStatusHappyPath</span>
-                <span class="method-start">5669 ms</span>
+                <span class="method-start">5782 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">services.pet.UpdatePetTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">updatePetHappyPath</span>
-                <span class="method-start">32246 ms</span>
+                <span class="method-start">38368 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">32793 ms</span>
+                <span class="method-start">38918 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
