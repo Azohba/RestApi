@@ -6,7 +6,6 @@
             <class name="services.pet.CreatePetTest">
                 <methods>
                     <include name="createPetHappyPath"/>
-                    <include name="createTestNegatives"/>
                 </methods>
             </class>
             <class name="services.pet.DeletePetTest">
@@ -25,7 +24,6 @@
             <class name="services.pet.UpdatePetTest">
                 <methods>
                     <include name="updatePetHappyPath"/>
-                    <include name="updatePetNegativeCases"/>
                 </methods>
             </class>
         </classes>
