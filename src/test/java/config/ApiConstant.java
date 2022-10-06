@@ -1,4 +1,4 @@
-package helpers.config;
+package config;
 
 public class ApiConstant {
     public static class PetStore{

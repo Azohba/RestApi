@@ -22,6 +22,9 @@ public class DeletePetTest extends CommonHelper {
         logger.info("Delete Pet happy pat");
         Response response = petHelper.deletePet(petId);
         Assert.assertEquals(response.getStatusCode(),200);
-        Assert.assertNull(petHelper.getPetsById(petId).toString());
+        Assert.assertEquals(response.jsonPath().getString("message"),String.valueOf(petId));
+        Assert.assertEquals(petHelper.getPetsById(petId).jsonPath().getString("message"),"Pet not found");
     }
+
+
 }

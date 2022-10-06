@@ -1,17 +1,16 @@
 package helpers;
 
 import client.RestAssuredClient;
-import helpers.config.ApiConstant;
+import config.ApiConstant;
 import io.restassured.response.Response;
 import models.request.CreatePetRequest;
 import models.request.UpdatePetRequest;
 import models.response.CreatePetResponse;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import static helpers.config.ApiConstant.PetStoreEndPoints.PET;
+import static config.ApiConstant.PetStoreEndPoints.PET;
 
 public class PetHelper extends RestAssuredClient {
     public PetHelper() {
@@ -64,9 +63,7 @@ public class PetHelper extends RestAssuredClient {
     }
 
     public Response deletePet(Integer petId){
-        Map<String,Object> params = new HashMap<>();
-        params.put("petId",petId);
-        Response response = delete(PET,params,null,null);
+        Response response = delete(PET + "/" + petId,null,null,null);
         return response;
     }
 
