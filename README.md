@@ -59,18 +59,23 @@ Runs the tests on Jenkins (firstly go to the directory path where Jenkins war lo
  
 ## Project Structure
 RestAssuredClient includes general Rest Assured api call methods (HTTP Methods: Get, Post, Put, Patch, Delete) to avoid retyping the same codes in our step classes or helper classes.
+
 $ main/java/client/
 
 Models includes the POJO(Plain Old Java Object) part of the project. It stores all of the request or response body objects in this directory. 
+
 $ main/java/models  
 
 Config includes some constants like URLs or Errors.
+
 $ test/java/config
 
 Helpers includes methods to call api endpoints.
+
 $ test/java/helpers
 
 Services includes all test classes inside of a tailored directory for api service.
+
 $ test/java/services
  
 ## Calliope
