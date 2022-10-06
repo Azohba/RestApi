@@ -30,24 +30,31 @@ Precondition: Ensure all required dependencies are installed
 1: Java and Maven have to be installed and configured path variables for Windows
 
 2: Clone the repository
+
 $ git clone https://github.com/Azohba/RestApi-SpriteCloud.git
 
 3: Install dependencies
-$ mvn clean install
+
+``` mvn clean install ```
 
 4: Install Jenkins to run the tests in a CI/CD environment
+
 $ Follow the steps in the article for Windows setup -> https://www.blazemeter.com/blog/how-to-install-jenkins-on-windows
+
 $ Follow the steps in the article for Mac setup -> https://www.knowledgehut.com/blog/devops/install-jenkins-on-mac
 
 5: Install Jenkins plugins in order to trigger for creating test results
-$ Plugin 1 HEYOOOOOO EKLEEE
+
+$ Maven plugin 
+
+$ TestNG report plugin
 
 ## Run
 Runs the test locally, below command triggers to run all test cases
 ``` mvn test ```
 
-Runs the tests on Jenkins
-``` java -jar jenkins-cli.jar -s http://localhost:8080/ -auth {{jenkins_username}}:{{jenkins_password}} build SpriteCloud  ```
+Runs the tests on Jenkins (firstly go to the directory path where Jenkins war locates)
+``` java -jar jenkins-cli.jar -s http://localhost:8080/ -auth {{jenkins_username}}:{{jenkins_password}} build RestApi_SpriteCloud  ```
 
  
 ## Project Structure
@@ -68,7 +75,8 @@ $ test/java/services
  
 ## Calliope
 Here is the link to go to results in Calliope.pro
-$ ADD LINK EKLEEE
+
+$ https://app.calliope.pro/profiles/4508
 
 ## Test Case Selection
 I chose at least one endpoint to perform each common used HTTP methods such as GET, PUT, POST, DELETE. So in this assignment I created pet by calling POST method. I updated pet info by calling PUT method. I get the pet info by calling GET method and finally I deleted the pet I created before by calling DELETE http method.
