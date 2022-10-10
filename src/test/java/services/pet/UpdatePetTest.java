@@ -3,7 +3,6 @@ package services.pet;
 import helpers.CommonHelper;
 import helpers.PetHelper;
 import io.restassured.response.Response;
-import models.response.CreatePetResponse;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
