@@ -24,9 +24,7 @@ public class PetHelper extends RestAssuredClient {
         return get(PET+"/findByStatus",params,null,null);
     }
     public Response getPetsById(Integer id){
-        Map<String,Object> params = new HashMap<>();
-        params.put("id",id);
-        return get(PET,params,null,null);
+        return get(PET + "/" + id,null,null,null);
     }
 
     public Response createPet(String categoryName, String petName, String photoUrl, String status){
