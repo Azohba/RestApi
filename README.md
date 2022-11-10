@@ -1,4 +1,4 @@
-# SpriteCloud Backend Test | Java & Rest Assured
+# Backend Test | Java & Rest Assured
 
 Api Test cases were implemented by using Java language, Maven Framework and Rest Assured within non-BDD structure.
 
@@ -31,7 +31,7 @@ Precondition: Ensure all required dependencies are installed
 
 2: Clone the repository
 
-$ git clone https://github.com/Azohba/RestApi-SpriteCloud.git
+$ git clone https://github.com/Azohba/RestApi.git
 
 3: Install dependencies
 
